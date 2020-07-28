@@ -158,7 +158,7 @@ end
 def player_stats(name)
   hash = game_hash
   hash.each do |location, attributes| 
-    attributes[:players].each do |attribute, info| 
+    attributes[:players].each do |player_name| 
       if info.include?(name) 
        return hash[:player_name]
       end
