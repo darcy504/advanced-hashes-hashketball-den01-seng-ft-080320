@@ -181,7 +181,7 @@ def player_stats(name)
   hash.each do |location, attributes|
     attributes.each do |attribute, team_info|
       if team_info.include? (name)
-        return hash[location][attribute][name]
+        return hash[:location][:attribute][:name]
       end
        end
       end
