@@ -160,7 +160,7 @@ def player_stats(name)
   hash.map do |location, attributes| 
     attributes[:players].map do |player_name| 
       if player_name.include?(name) 
-       return hash[:player_name]
+       return player_name
       end
     end
   end
